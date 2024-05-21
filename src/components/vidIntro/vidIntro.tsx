@@ -43,7 +43,7 @@ const VidIntro =() => {
 					<div className={styles.categoryCover}>
 						<div className={styles.categoryImgCover}>
               <div className={styles.imgPositioner}>
-              <video className={styles.vid} src="/video/intro8.webm" width="100%" height="auto" autoPlay muted loop ></video>
+              <video className={styles.vid} src="/video/intro8.mp4" width="100%" height="auto" autoPlay muted loop ></video>
               </div>
              
 							
