@@ -1,24 +1,11 @@
 import React, { useState, useEffect, useMemo, memo, useCallback } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import Logo from "../nav/mainNav/logo";
 import { useSearchParams } from "next/navigation";
+
 
 import styles from "./styles.module.css";
 
-interface CarouselProps {
-	Services: {
-		id: number;
-		category: string;
-		src: string;
-		services: {
-			id: number;
-			name: string;
-			src: string;
-			link: string;
-		}[];
-	}[];
-}
 
 const VidIntro =() => {
 	const searchParams = useSearchParams();
@@ -43,7 +30,17 @@ const VidIntro =() => {
 					<div className={styles.categoryCover}>
 						<div className={styles.categoryImgCover}>
               <div className={styles.imgPositioner}>
-              <video className={styles.vid} src="/video/intro8.mkv" width="100%" height="auto" autoPlay muted loop ></video>
+							<Image
+										object-fit="cover"
+										className={styles.vid}
+										alt="Picture of the author"
+										quality={100}
+										width={100}
+										height={100}
+										src="/service/white.gif"
+										priority={true}
+										unoptimized
+									/>
               </div>
              
 							
