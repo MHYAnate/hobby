@@ -37,7 +37,7 @@ const VidIntro =() => {
 										quality={100}
 										width={100}
 										height={100}
-										src="/service/green.jpg"
+										src="/service/white.gif"
 										priority={true}
 										unoptimized
 									/>
